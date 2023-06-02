@@ -4,7 +4,7 @@ This is a solution to the NFT preview card component challenge on Frontend Mento
 
 ### Screenshot
 
-![](./design/my-code.png)
+![](./images/my-code.png)
 
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
