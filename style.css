@@ -81,62 +81,33 @@ main {
   max-width: 35em;
 }
 
-.main-img {
-  opacity: 1;
-  width: 100%;
-  margin: auto;
-  height: auto;
-  border-radius: 0.8em;
-  transition: .5s ease;
-
-}
-
-.img-container {
-  position: relative;
-  cursor: pointer;
-
+.img {
+  border-radius: .8em;
 }
 
 .overlay {
-  opacity: 0;
-  transition: .5s ease;
+  background-color: hsl(178, 100%, 50%,0.5);
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;  
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: var(--primary-cyan);
-  width: 100%;
-  height: 100%;
-  border-radius: .8em;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-.black {
-  width: 100%;
-  height: 100%;
-  background: var(--primary-cyan);
-  border-radius: .8em;
+/* .overlay-visibility {
+  display: none;
+} */
+
+.image:hover .overlay-visibility{
+  display: block;
 }
 
-.icon {
-  opacity: 0;
-  transition: .5s ease;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-}
 
-.img-container:hover .overlay {
-  opacity: .3;
-}
 
-.img-container:hover .icon {
-  opacity: 1;
-}
 
 .flex-group-main {
   display: flex;
